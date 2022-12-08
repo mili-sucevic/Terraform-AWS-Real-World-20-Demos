@@ -1,4 +1,4 @@
-module "ec2-public" {
+module "ec2_public" {
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "4.2.1"
 
