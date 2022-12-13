@@ -12,7 +12,7 @@ terraform {
 # Provider Block
 provider "aws" {
   # Write the region name below in which your environment has to be deployed!
-  region  = var.region
+  region = var.region
 
   # Assign the profile name here!
   profile = var.profile
