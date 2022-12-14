@@ -5,7 +5,7 @@ resource "aws_instance" "mysql" {
   ]
 
   # AMI ID - Amazon Linux 2 AMI (HVM) - Kernel 5.10, SSD Volume Type
-  ami           = var.ami-mysql
+  ami           = var.ami
   instance_type = var.instance_type
   subnet_id     = aws_subnet.private-subnet.id
 

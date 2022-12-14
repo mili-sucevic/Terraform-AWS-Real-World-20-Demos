@@ -16,5 +16,3 @@ az_private           = "us-east-1b"
 ami           = "ami-0b0dcb5067f052a63"
 instance_type = "t2.micro"
 
-# EC2 MySQL
-ami-mysql = "ami-0b5375d1a386bdf09"

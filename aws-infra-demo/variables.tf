@@ -54,8 +54,3 @@ variable "instance_type" {
   type        = string
 }
 
-## EC2 Vars
-variable "ami-mysql" {
-  description = "AMI to use for the instance"
-  type        = string
-}
