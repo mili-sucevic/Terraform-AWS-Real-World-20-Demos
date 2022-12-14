@@ -43,7 +43,7 @@ variable "az_private" {
   type        = string
 }
 
-## EC2 Vars
+## EC2 Wordpress Vars
 variable "ami" {
   description = "AMI to use for the instance"
   type        = string
@@ -51,5 +51,11 @@ variable "ami" {
 
 variable "instance_type" {
   description = "Instance type to use for the instance. "
+  type        = string
+}
+
+## EC2 Vars
+variable "ami-mysql" {
+  description = "AMI to use for the instance"
   type        = string
 }

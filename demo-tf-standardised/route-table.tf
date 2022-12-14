@@ -15,6 +15,6 @@ resource "aws_route_table" "public-subnet-rt" {
   }
 
   tags = {
-    Name = "Route Table for Internet Gateway"
+    Name = "route-table-internet-gateway"
   }
 }

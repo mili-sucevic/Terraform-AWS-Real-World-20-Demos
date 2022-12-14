@@ -16,6 +16,6 @@ resource "aws_route_table" "nat-gateway-rt" {
   }
 
   tags = {
-    Name = "Route Table for Internet Gateway"
+    Name = "route-table-nat-gateway"
   }
 }
