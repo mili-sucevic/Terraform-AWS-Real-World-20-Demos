@@ -8,7 +8,7 @@ module "ec2_private_app1" {
   #for_each = toset([ module.vpc.private_subnets[0],module.vpc.private_subnets[1] ])
   for_each = toset(["0", "1"])
 
-  name                   = "${var.environment}-vm-${each.key}"
+  name                   = "${var.environment}-app1"
   ami                    = data.aws_ami.amzlinux2.id
   instance_type          = var.instance_type
   key_name               = var.instance_keypair
