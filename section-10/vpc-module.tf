@@ -18,6 +18,8 @@ module "vpc" {
   # create_database_nat_gateway_route = true
 
   # NAT Gateways - Outbound Communication
+  ## Single NAT Gateway - If single_nat_gateway = true, then all private subnets will route their Internet traffic through this single NAT gateway. 
+  ## The NAT gateway will be placed in the first public subnet in your public_subnets block.
   enable_nat_gateway = var.vpc_enable_nat_gateway
   single_nat_gateway = var.vpc_single_nat_gateway
 
