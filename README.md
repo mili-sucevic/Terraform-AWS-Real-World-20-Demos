@@ -2,8 +2,6 @@
 Based on Udemy Course Terraform on AWS with SRE & IaC DevOps | Real-World 20 Demos
 https://www.udemy.com/course/terraform-on-aws-with-sre-iac-devops-real-world-demos/learn/lecture/26103420#overview
 
-[![Image](https://stacksimplify.com/course-images/terraform-on-aws-best-seller.png "Terraform on AWS with SRE & IaC DevOps | Real-World 20 Demos")](https://links.stacksimplify.com/terraform-on-aws-with-sre-and-iacdevops)
-
 ## Course Modules
 01. Infrastructure as Code (IaC)
 02. Terraform Basics
@@ -141,18 +139,10 @@ https://www.udemy.com/course/terraform-on-aws-with-sre-iac-devops-real-world-dem
 # AWS EKS - Elastic Kubernetes Service - Masterclass
 [![Image](https://stacksimplify.com/course-images/AWS-EKS-Kubernetes-Masterclass-DevOps-Microservices-course.png "AWS EKS Kubernetes - Masterclass")](https://www.udemy.com/course/aws-eks-kubernetes-masterclass-devops-microservices/?referralCode=257C9AD5B5AF8D12D1E1)
 
-
-# Azure Kubernetes Service with Azure DevOps and Terraform 
-[![Image](https://stacksimplify.com/course-images/azure-kubernetes-service-with-azure-devops-and-terraform.png "Azure Kubernetes Service with Azure DevOps and Terraform")](https://www.udemy.com/course/azure-kubernetes-service-with-azure-devops-and-terraform/?referralCode=2499BF7F5FAAA506ED42)
-
-
 ## Additional References
 - [Certification Curriculum](https://www.hashicorp.com/certification/terraform-associate)
 - [Certification Preparation](https://learn.hashicorp.com/collections/terraform/certification)
 - [Study Guide](https://learn.hashicorp.com/tutorials/terraform/associate-study?in=terraform/certification)
 - [Exam Review Guide](https://learn.hashicorp.com/tutorials/terraform/associate-review?in=terraform/certification)
 - [Sample Questions](https://learn.hashicorp.com/tutorials/terraform/associate-questions?in=terraform/certification)
-
-
-
 
