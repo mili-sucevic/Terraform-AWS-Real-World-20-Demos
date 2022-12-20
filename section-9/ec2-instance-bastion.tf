@@ -1,8 +1,13 @@
+# EC2 BASTION MODULE
 module "ec2_public" {
+depends_on = [
+  module.vpc,
+  module.public_bastion_sg
+]
   source  = "terraform-aws-modules/ec2-instance/aws"
   version = "4.2.1"
 
-  name = "${var.environment}-BastionHost"
+  name = "${var.environment}-bastion-host"
 
   ami                    = data.aws_ami.amzlinux2.id
   instance_type          = var.instance_type

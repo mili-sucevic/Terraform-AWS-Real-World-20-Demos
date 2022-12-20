@@ -13,13 +13,13 @@ resource "null_resource" "name" {
   ## File Provisioner: Copies the terraform-key.pem file to /tmp/terraform-key.pem
   provisioner "file" {
     source      = "private-key/tf-deploy.pem"
-    destination = "/tmp/terraform-key.pem"
+    destination = "/tmp/tf-deploy.pem"
   }
 
   ## Remote Exec Provisioner: Using remote-exec provisioner fix the private key permissions on Bastion Host
   provisioner "remote-exec" {
     inline = [
-      "sudo chmod 400 /tmp/terraform-key.pem"
+      "sudo chmod 400 /tmp/tf-deploy.pem"
     ]
   }
 
