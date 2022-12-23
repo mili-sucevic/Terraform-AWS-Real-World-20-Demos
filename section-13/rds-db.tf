@@ -11,6 +11,7 @@ module "rds_db" {
   port     = 3306
 
   multi_az               = true
+  subnet_ids             = module.vpc.database_subnets
   db_subnet_group_name   = module.vpc.database_subnet_group_name
   vpc_security_group_ids = [module.rds_db_sg.security_group_id]
 
@@ -20,7 +21,7 @@ module "rds_db" {
   engine_version       = "8.0"
   family               = "mysql8.0" # DB parameter group
   major_engine_version = "8.0"      # DB option group
-  instance_class       = "db.t4g.micro"
+  instance_class       = "db.t3.large"
 
   allocated_storage     = 20
   max_allocated_storage = 100
@@ -29,14 +30,13 @@ module "rds_db" {
   maintenance_window              = "Mon:00:00-Mon:03:00"
   backup_window                   = "03:00-06:00"
   enabled_cloudwatch_logs_exports = ["general"]
-  # create_cloudwatch_log_group     = true
 
   backup_retention_period = 0
   skip_final_snapshot     = true
   deletion_protection     = false
 
-  # performance_insights_enabled          = true
-  # performance_insights_retention_period = 7
+  performance_insights_enabled          = true
+  performance_insights_retention_period = 7
   create_monitoring_role = true
   monitoring_interval    = 60
 

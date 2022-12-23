@@ -9,8 +9,12 @@ module "loadbalancer_sg" {
   vpc_id      = module.vpc.vpc_id
 
   # Ingress Rules & CIDR Blocks
+  # Allowed 443 via the LB
   ingress_cidr_blocks = ["0.0.0.0/0"]
   ingress_rules       = ["http-80-tcp", "https-443-tcp"]
+
+  # Egress Rule - all-all open
+  egress_rules       = ["all-all"]
 
   # Open to CIDRs blocks (rule or from_port+to_port+protocol+description)
   ingress_with_cidr_blocks = [
@@ -20,12 +24,8 @@ module "loadbalancer_sg" {
       protocol    = 6
       description = "Allow Port 81 from internet"
       cidr_blocks = "0.0.0.0/0"
-    },
+    }
   ]
-
-  # Egress Rule - all-all open
-  egress_cidr_blocks = ["0.0.0.0/0"]
-  egress_rules       = ["all-all"]
 
   tags = local.common_tags
 }

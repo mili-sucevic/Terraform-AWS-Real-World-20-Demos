@@ -1,14 +1,15 @@
 # Terraform AWS RDS Database Variables
 # Place holder file for AWS RDS Database
 
-variable "db_instance_identifier" {
-  description = "AWS RDS Database Instance Identifier"
-  type        = string
-}
-
 # DB Name
 variable "db_name" {
   description = "AWS RDS Database Name"
+  type        = string
+}
+
+# DB Instance Identifier
+variable "db_instance_identifier" {
+  description = "AWS RDS Database Instance Identifier"
   type        = string
 }
 

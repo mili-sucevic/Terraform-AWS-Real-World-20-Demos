@@ -1,7 +1,7 @@
 ## Default DNS
 resource "aws_route53_record" "apps_dns" {
   zone_id = data.aws_route53_zone.my_domain.id
-  name    = "dns-to-db.cmcloudlab1566.info"
+  name    = "dns-to-db.cmcloudlab1597.info"
   type    = "A"
 
   alias {

@@ -6,7 +6,7 @@ module "acm" {
   domain_name = trimsuffix(data.aws_route53_zone.my_domain.name, ".") # Remove the dot with trimsuffix at the end of the domain name
   zone_id     = data.aws_route53_zone.my_domain.zone_id
   subject_alternative_names = [
-    "*.cmcloudlab1566.info"
+    "*.cmcloudlab1597.info"
   ]
 
   tags = local.common_tags
