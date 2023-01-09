@@ -63,8 +63,8 @@ module "autoscaling" {
   associate_public_ip_address = false
 
   # Add Spot Instances, which creates Spot Requests to get instances at the price listed (Optional argument)
-  spot_price        = "0.014"
-  #spot_price        = "0.016" # Change for Instance Refresh test
+  # spot_price        = "0.014"
+  spot_price        = "0.016" # Change for Instance Refresh test
 
   ebs_block_device = [
     {
